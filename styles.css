@@ -1,0 +1,31 @@
+/* social media navigation*/
+.socialMedia{
+    width: 20%;
+    display:flex;
+    justify-content: space-around;
+}
+.openContactbtn{
+    display:flex;
+    justify-content:center;
+    width: 150px;
+}
+.openContactbtn:hover{
+    background-color: #e6e6e9;
+}
+.openContactsTitle{
+    font-size: smaller;
+}
+.openContactsImg img{
+    width:30px;
+    height:30px;
+    padding: 5px;
+}
+.socialMediaIcons img{
+    width: 30px;
+    height:30px;
+    padding: 8px;
+    display: none;
+}
+.socialMediaIcons img:hover{
+    background-color: #e6e6e9;
+}
