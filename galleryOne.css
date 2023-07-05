@@ -2,6 +2,7 @@ body,html{
     height: 100%;
     overflow-y: hidden;
 }
+/* background image */
 .background {
     position: relative;
     background-image: url(galleryBackground/artGalleryOne.png);
@@ -10,6 +11,7 @@ body,html{
     background-repeat: no-repeat;
     background-size: cover;
   }
+  /* instructions */
   .instructions{
     border: 3px dotted grey;
     position: absolute;
@@ -21,11 +23,21 @@ body,html{
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
   }
+  /* home button */
   .homeButton img{
+    cursor: pointer;
     position: absolute;
+    box-shadow: 0 9px grey;
     width: 60px;
     height: 50px;
     bottom: 0px;
     border: 3px solid grey;
     border-radius: 10px;
+  }
+  .homeButton img:hover{
+    border: 3px inset grey;
+  }
+  .homeButton img:active{
+    box-shadow: 0 5px rgb(83,83,83);
+    transform: translateY(3px);
   }
