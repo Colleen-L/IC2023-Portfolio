@@ -1,6 +1,7 @@
 /* general */
 body{
-    background-color: #9999A1;
+    background-color: #b1c1c0;
+    overflow-x: hidden;
 }
 /* social media navigation*/
 .socialMedia{
@@ -14,11 +15,12 @@ body{
     display:flex;
     justify-content: center;
     width: 150px;
-    background-color: black;
-    color: white;
+    background-color: #dcedb9;
+    color: #918868;
 }
 .openContactbtn:hover{
-    background-color: #3c3c3f;
+    cursor: pointer;
+    background-color: #d2e59e;
 }
 .openContactTitle{
     font-size: smaller;
@@ -28,7 +30,6 @@ body{
     height:30px;
     padding: 5px;
     margin-left: 10px;
-    background-color: #f4f4f6;
 }
 /* social media */
 .socialMediaIcons{
@@ -40,7 +41,7 @@ body{
     padding: 8px;
 }
 .socialMediaIcons img:hover{
-    background-color: #66666E;
+    background-color: #d2e59e;
     border-radius:5px;
 }
 /* close contact btn */
@@ -51,14 +52,15 @@ body{
     display: none;
 }
 .closeContactbtn:hover{
-    background-color: #e6e6e9;
+    cursor: pointer;
+    background-color: #d2e59e;
     border-radius:5px;
 }
 /* aboutme */
 /* help from https://www.youtube.com/watch?v=rGAbT8ykGB0 */
 .sidebar{
     position: absolute;
-    border: 2px solid black;
+    border: 2px solid #918868;
     border-radius: 5px;
     right:0%;
     top: 0%;
@@ -67,7 +69,7 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     width: 375px;
     height: 100%;
-    background-color: black;
+    background-color: #dcedb9;
     right: -400px;
     transition: 0.4s;
 }
@@ -75,12 +77,12 @@ body{
     right:0;
 }
 .profilePic img{
-    border: 1px solid black;
+    border: 1px solid #918868;
     border-radius:5px;
 }
 .sidebar ul li{
     list-style: none;
-    color: #f4f4f6;
+    color: #918868;
     font-size: 25px;
     padding: 10px;
 }
@@ -98,8 +100,11 @@ body{
 .barOne{
     width: 50px;
     height: 3px;
-    background-color: black;
+    background-color: #918868;
     display: block;
+}
+.sidebarButtonOne:hover{
+    cursor: pointer;
 }
 .sidebarButtonTwo{
     position: absolute;
@@ -110,12 +115,101 @@ body{
     left: 20px;
     width: 40px;
     height: 3px;
-    background-color: black;
+    background-color: #918868;
     display: block;
     margin-top:15px;
 }
+.sidebarButtonTwo:hover{
+    cursor: pointer;
+}
+/* content */
+.content{
+    display: flex;
+}
 /* slideshow */
+/* help from https://www.youtube.com/watch?v=j18CH0Grhbw */
+.slideshow{
+    overflow:hidden;
+    height: 600px;
+    width: 950px;
+    margin-left:10px;
+    margin-top:30px;
+    border-radius: 10px;
+}
 .slideImage{
-    width:60%;
+    width:70%;
     height:600px;
+    padding: 50px;
+}
+/* slide animation */
+@keyframes slideshow_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left: 1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+}
+.slides{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    animation-name: slideshow_animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.slide{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+/* text for slides */
+.slideText{
+    position: absolute;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f4f4f6;
+    width: 90%;
+    transition: .7s ease;
+    opacity: 0;
+    font-size: 20px;
+    padding: 5px;
+    text-align:inherit;
+}
+.slides:hover .slideText{
+    opacity: 1;
+}
+.enter{
+    height: 100%;
+    padding: 100px;
+}
+.enterButton{
+    cursor: pointer;
+    margin-top: 100px;
+    width: 400px;
+    height: 300px;
+    font-size: 40px;
+    color: #918868;
+    background-color: #dcedb9;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px grey;
+
+}
+.enterButton:hover{
+    background-color:#d2e59e;
+}
+.enterButton:active{
+    background-color: #d2e59d;
+    box-shadow: 0 5px rgb(83, 83, 83);
+    transform: translateY(3px);
 }

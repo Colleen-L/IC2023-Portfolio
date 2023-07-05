@@ -1,0 +1,31 @@
+body,html{
+    height: 100%;
+    overflow-y: hidden;
+}
+.background {
+    position: relative;
+    background-image: url(galleryBackground/artGalleryOne.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .instructions{
+    border: 3px dotted grey;
+    position: absolute;
+    bottom: 0px;
+    font-size: 12px;
+    background-color: #d2e59e;
+    color: #918868;
+    margin-left: 700px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+  }
+  .homeButton img{
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    bottom: 0px;
+    border: 3px solid grey;
+    border-radius: 10px;
+  }
