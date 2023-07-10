@@ -1,6 +1,6 @@
 *{
-  font-family: 'Kanit', sans-serif;
-}
+    font-family: 'Kanit', sans-serif;
+  }
 body,html{
     height: 100%;
     overflow-y: hidden;
@@ -12,7 +12,7 @@ body{
 /* background image */
 .background {
     position: relative;
-    background-image: url(galleryBackground/artGalleryOne.png);
+    background-image: url(galleryBackground/artGalleryTwo.png);
     height: 101%;
     width: 101%;
     background-position: center;
@@ -31,54 +31,47 @@ body{
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
   }
-  /* home button */
-  .homeButton img{
+  /* exit button */
+  .exitButton button{
     cursor: pointer;
     position: absolute;
-    box-shadow: 0 9px grey;
-    width: 60px;
-    height: 50px;
-    bottom: 20px;
-    margin-left: 20px;
-    border: 3px solid grey;
-    border-radius: 10px;
+    width: 120px;
+    height:60px;
+    right: 40%;
+    top: 22%;
+    background-color: transparent;
+    border: none;
   }
-  .homeButton img:hover{
-    border: 3px inset grey;
-  }
-  .homeButton img:active{
-    box-shadow: 0 5px rgb(83,83,83);
-    transform: translateY(3px);
-  }
-  /* inspect hobbies */
+
+  /* inspect coding */
   .inspect{
     width: 100%;
     height: 100%;
     display: flex;
   }
-  .inspectHobbies{
-    position: absolute;
+  .inspectCoding{
     cursor: pointer;
-    left: 15%;
+    position: absolute;
+    left: 20%;
     top: 65%;
     width: 50px;
     height: 50px;
   }
-  .inspectHobbies:hover{
+  .inspectCoding:hover{
     background-color: #cbd081;
     border: 3px solid #d2e95e;
     border-radius: 5px;
   }
-  /* inspect achievements */
-  .inspectAchievements{
+  /* inspect volunteer */
+  .inspectVolunteer{
     position: absolute;
     cursor: pointer;
-    right: 12%;
+    right: 15%;
     top: 65%;
     width: 50px;
     height: 50px;
   }
-  .inspectAchievements:hover{
+  .inspectVolunteer:hover{
     background-color: #cbd081;
     border: 3px solid #d2e95e;
     border-radius: 5px;

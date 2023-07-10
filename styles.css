@@ -1,4 +1,7 @@
 /* general */
+*{
+    font-family: 'Kanit', sans-serif;
+}
 body{
     background-color: #b1c1c0;
     overflow-x: hidden;
@@ -17,11 +20,18 @@ body{
     width: 150px;
     background-color: #dcedb9;
     color: #918868;
+    box-shadow: 0 7px grey;
+    border-radius: 5px;
 }
 .openContactbtn:hover{
     cursor: pointer;
     background-color: #d2e59e;
 }
+.openContactbtn:active{
+    box-shadow: 0 5px rgb(83,83,83);
+    transform: translateY(3px);
+}
+
 .openContactTitle{
     font-size: smaller;
 }
@@ -39,6 +49,7 @@ body{
     width: 30px;
     height:30px;
     padding: 8px;
+    box-shadow: 0 7px grey;
 }
 .socialMediaIcons img:hover{
     background-color: #d2e59e;
@@ -50,6 +61,7 @@ body{
     height: 25px;
     padding: 8px;
     display: none;
+    box-shadow: 0 7px grey;
 }
 .closeContactbtn:hover{
     cursor: pointer;
@@ -77,6 +89,7 @@ body{
     right:0;
 }
 .profilePic img{
+    margin: 5px;
     border: 1px solid #918868;
     border-radius:5px;
 }
@@ -84,7 +97,7 @@ body{
     list-style: none;
     color: #918868;
     font-size: 25px;
-    padding: 10px;
+    padding: 5px;
 }
 .sidebar li:first-child{
     font-size: 40px;
@@ -121,6 +134,7 @@ body{
 }
 .sidebarButtonTwo:hover{
     cursor: pointer;
+    transform: translateY(1px);
 }
 /* content */
 .content{
