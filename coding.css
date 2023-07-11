@@ -4,6 +4,9 @@
 body{
     background-color: #b1c1c0;
 }
+iframe{
+    border-radius: 5px;
+}
 /* triangle design */
 .rect{
     width: 800px;
@@ -128,10 +131,27 @@ hr{
     text-align: center;
     padding: 6px;
 }
-.codingPowerImage{
-    width: 43%;
+.codingPowerLogo{
+    width: 13%;
+    text-align: left;
+    margin: 5px;
+}
+.codingPowerArtwork{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
     border-radius: 5px;
     margin: 15px;
+}
+.codingPowerImage{
+    width: 75px;
+    height: 75px;
+}
+.codingPowerProjects iframe{
+    height: 500px;
+    margin: 50px;
+    width: 800px;
 }
 
 
@@ -157,6 +177,11 @@ hr{
     border-radius: 5px;
     margin: 15px;
 }
+.introProjects{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
 /* CSI */
 .CSIDescription{
     position: relative;
@@ -175,10 +200,21 @@ hr{
     text-align: center;
     padding: 6px;
 }
-.CSIImage{
-    width: 30%;
-    margin: 5px;
+.CSIArtwork{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
     border-radius: 5px;
+}
+.CSIProjects{
+    width:70%;
+}
+.CSIProjects iframe{
+    border: none;
+    width: 1000px;
+    height: 700px;
+    margin: 10px;
 }
 
 /* catapult */
@@ -199,10 +235,27 @@ hr{
     text-align: center;
     padding: 6px;
 }
-.catapultImage{
-    width: 43%;
+.catapultLogo{
+    width: 13%;
+    text-align: left;
     margin: 5px;
+}
+.catapultArtwork{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
     border-radius: 5px;
+    margin: 15px;
+}
+.catapultImage{
+    width: 150px;
+    height: 55px;
+}
+.catapultProjects iframe{
+    height: 500px;
+    margin: 50px;
+    width: 800px;
 }
 
 
